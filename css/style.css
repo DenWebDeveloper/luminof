@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    text-decoration: none
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.home {
+    background: #000 url("../img/slide1.jpg") no-repeat;
+    background-size: cover;
+    background-position: -540px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-blur {
+    position: absolute;
+    height: 118vh;
+    width: 107vw;
+    top: -30px;
+    background: transparent url(../img/slide1.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(23px) grayscale(200%);
+    background-position: -540px 0;
+}
+
+.navigation {
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.74);
+    box-shadow: 0 0 30px 6px #000;
+}
+
+.navigation__items {
+    margin: 0 auto;
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.navigation__items a {
+    font-size: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #e55c36 66%, #0D61BC 66%, #5ccf68);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+}
+
+
+
+.main__main-text {
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 10%;
+}
+
+.home__title {
+    font-size: 150px;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
+
+.home__btn-animation {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    color:#fff;
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    background: transparent;
+    border:none;
+}
+
+.home__btn-animation:before, .home__btn-animation:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+
+.home__btn-animation:hover {
+    color: #96B7C4;
+    transition-delay: .6s;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.home__btn-animation:hover:before {
+    transition-delay: 0s;
+}
+
+.home__btn-animation:hover:after {
+    background: #fff;
+    transition-delay: .4s;
+}
+
+.home__btn-animation:before,
+.home__btn-animation:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.home__btn-animation:before {
+    right: 0;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+.home__btn-animation:after {
+    left: 0;
+}
+
+.home__btn-animation:hover:before,
+.home__btn-animation:hover:after {
+    width: 100%;
+}
+
+/* ~~~~~~~ END BTN ~~~~~~~ */
