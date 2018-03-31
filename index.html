@@ -8,32 +8,52 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Lobster" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Luminof</title>
 </head>
 <body>
-<div id="fullpage">
+<div class="helper-menu__bar">
+    <a href="#" class="helper-menu__trigger">
+        <div class="bars"></div>
+    </a>
+</div>
+<div class="main"><div id="fullpage">
     <div class="section home">
-        <div class="nav-blur"></div>
+        <div class="preview-blur"></div>
         <nav class="navigation">
             <ul class="navigation__items">
-                <li class="navigation__item"><a href="#">Home</a></li>
-                <li class="navigation__item"><a href="#">Каталог и прайс</a></li>
-                <li class="navigation__item"><a href="#">Оплата и доставка</a></li>
-                <li class="navigation__item"><a href="#">Скидки</a></li>
-                <li class="navigation__item"><a href="#">Контакты</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Каталог и прайс</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Оплата и доставка</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Скидки</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
             </ul>
         </nav>
         <div class="main__main-text">
-            <h1 class="home__title">Luminof</h1>
+            <h1 class="home__title">LumiGlow</h1>
             <button class="home__btn-animation">Cделать жизнь ярче!!!</button>
         </div>
-        <div>
+        <div class="mouse">
         </div>
     </div>
     <div class="section">Определённый раздел</div>
     <div class="section">Определённый раздел</div>
     <div class="section">Определённый раздел</div>
+</div></div>
+<div class="helper-menu">
+    <ul class="helper-menu__list helper-menu__list--top">
+        <li class="helper-menu__item"><a class="navigation__link">Мы всегда готовы вам помочь</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="tel:+380939133710">(093) 913 37 10</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="tel:+380967545215">(096) 754 52 15</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="tel:+380501373907">(050) 137 39 07</a></li>
+    </ul>
+    <ul class="helper-menu__list">
+        <li class="helper-menu__item"><a class="navigation__link" href="#">Home</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="#">Каталог и прайс</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="#">Оплата и доставка</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="#">Скидки</a></li>
+        <li class="helper-menu__item"><a class="navigation__link" href="#">Контакты</a></li>
+    </ul>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
