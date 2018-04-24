@@ -1,13 +1,15 @@
 @import url(navbar.css);
 @import url(mouse.css);
+@import url(particles.css);
 body {
     margin: 0;
     color: #fff;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC',  cursive;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -113,7 +115,6 @@ html {
 .home__title {
     font-size: 150px;
     color: #fff;
-    font-family: 'Amatic SC', cursive;
     font-weight: bold;
     margin-bottom: 0;
     margin-top: 0;
@@ -124,10 +125,9 @@ html {
 .home__btn-animation {
     position: relative;
     font-size: 20px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC','Arial', cursive;
     font-weight: 400;
-    padding: 1.4rem 4.2rem;
-    padding-right: 3.1rem;
+    padding: 1.4rem 3.1rem 1.4rem 4.2rem;
     color:#fff;
     letter-spacing: 1.1rem;
     text-transform: uppercase;
@@ -186,3 +186,39 @@ html {
 
 /* ~~~~~~~ END BTN ~~~~~~~ */
 
+#defaultCanvas0 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.section__wrapper {
+    height: 100vh;
+    color: #b3a4a4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__title {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.section__row {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__img {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.section__content {
+    font-family: 'Roboto', 'Arial',sans-serif;
+}

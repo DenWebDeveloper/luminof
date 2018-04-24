@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Lobster|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,29 +17,52 @@
         <div class="bars"></div>
     </a>
 </div>
-<div class="main"><div id="fullpage">
-    <div class="section home">
-        <div class="preview-blur"></div>
-        <nav class="navigation">
-            <ul class="navigation__items">
-                <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Каталог и прайс</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Оплата и доставка</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Скидки</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="main__main-text">
-            <h1 class="home__title">LumiGlow</h1>
-            <button class="home__btn-animation">Cделать жизнь ярче!!!</button>
+<div class="main">
+    <div id="fullpage">
+        <div class="section home">
+            <div class="preview-blur"></div>
+            <nav class="navigation">
+                <ul class="navigation__items">
+                    <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Каталог и прайс</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Оплата и доставка</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Скидки</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main__main-text">
+                <h1 class="home__title">LumiGlow</h1>
+                <button class="home__btn-animation">Cделать жизнь ярче!!!</button>
+            </div>
+            <div class="mouse">
+            </div>
         </div>
-        <div class="mouse">
+        <div class="section">
+            <div class="section__wrapper">
+                <div class="section__title">
+                    <h2>Что такое люминофор</h2>
+                </div>
+                <div class="section__row">
+                    <img class="section__img" src="img/slide2.jpg" alt="Luminof">
+                    <div class="section__content">
+                        <p> Люминофор - это светонакопительный пигмент, в форме порошка. Он обладает свойством излучать
+                            яркое свечение в темноте и под ультрафиолетом. Люминофор - светящаяся краска - инновационный
+                            продукт, который позволяет Вам, подключив фантазию, производить самостоятельно изумительно
+                            красивые вещи.
+                            Светящаяся краска появилась совсем недавно. Она обладает свойством послесвечения в темноте на
+                            протяжении 8-10 часов, а срок ее годности - более 100 лет. Люминофор - светящийся пигмент,
+                            который способен заряжаться от разных источников света (Солнце, лампы освещения, у/ф лампы и
+                            др.).
+                            Чем ярче свет, тем быстрее происходит подзарядка люминофора, в среднем это занимает полчаса.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="section">Определённый раздел</div>
+        <div class="section">Определённый раздел</div>
     </div>
-    <div class="section">Определённый раздел</div>
-    <div class="section">Определённый раздел</div>
-    <div class="section">Определённый раздел</div>
-</div></div>
+</div>
 <div class="helper-menu">
     <ul class="helper-menu__list helper-menu__list--top">
         <li class="helper-menu__item"><a class="navigation__link">Мы всегда готовы вам помочь</a></li>
@@ -59,6 +82,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
-<script src="main.js"></script>
+<script src="js/noise.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/p5.min.js"></script>
+<script src="js/particle.js"></script>
+<script src="js/noise.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
